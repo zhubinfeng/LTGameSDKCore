@@ -8,8 +8,8 @@
 
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
+#import "LTUser.h"
 
-@class LTUser;
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^loginUserBlock)(LTUser *loginUser);
