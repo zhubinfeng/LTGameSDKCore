@@ -31,9 +31,25 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
  
  @param block 回调通知
  */
+#if __has_include(<FBSDKCoreKit/FBSDKCoreKit.h>)
 -(void)facebookLogin:(loginUserBlock)block;
+#endif
 
+#if __has_include(<GoogleSignIn/GoogleSignIn.h>)
+/**
+ google平台注册
+ 
+ @param clientID Google平台生成的客户端ID
+ @param vc 当前所在的UIViewController
+ */
+-(void)registGooglePlatform:(NSString *)clientID withUIViewController:(UIViewController *)vc;
+/**
+ Google登录
 
+ @param block 接受回调的Block
+ */
+-(void)googleLogin:(loginUserBlock)block;
+#endif
 /**
  获取登录结果回调
  

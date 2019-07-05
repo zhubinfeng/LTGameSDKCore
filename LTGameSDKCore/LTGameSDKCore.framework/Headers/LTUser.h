@@ -15,6 +15,7 @@ typedef NS_ENUM(NSInteger, LTLoginState) {
 typedef NS_ENUM(NSInteger, LTUserType) {
     LTUserTypeUnLogin,
     LTUserTypeFacebook,
+    LTUserTypeGoogle,
 };
 NS_ASSUME_NONNULL_BEGIN
 

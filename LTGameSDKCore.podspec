@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LTGameSDKCore"
-  s.version      = "0.0.6"
+  s.version      = "0.0.7"
   s.summary      = "LTGameSDKCore Supports base function to third login."
   s.description  = "You can use this SDK easy in third login, and this sdk will add more for later"
   s.homepage     = "https://github.com/zhubinfeng/LTGameSDKCore"
@@ -24,6 +24,13 @@ Pod::Spec.new do |s|
         # Facebook
         sp.subspec 'Facebook' do |ssp|
           ssp.vendored_frameworks = 'LTGameSDKCore/Support/PlatformSDK/FacebookSDK/FBSDKCoreKit.framework','LTGameSDKCore/Support/PlatformSDK/FacebookSDK/FBSDKLoginKit.framework','LTGameSDKCore/Support/PlatformSDK/FacebookSDK/Bolts.framework'
+        end
+
+        # Google
+        sp.subspec 'Google' do |ssp|
+          ssp.vendored_frameworks = 'LTGameSDKCore/Support/PlatformSDK/GoogleSDK/GoogleSignIn.framework','LTGameSDKCore/Support/PlatformSDK/GoogleSDK/GoogleSignInDependencies.framework'
+          ssp.resources = 'LTGameSDKCore/Support/PlatformSDK/GoogleSDK/GoogleSignIn.bundle'
+          ssp.frameworks = 'LocalAuthentication','SafariServices','SystemConfiguration'
         end
 
       end
