@@ -1,0 +1,6 @@
+framework module LTPlatformGoogle {
+  umbrella header "LTPlatformGoogle.h"
+
+  export *
+  module * { export * }
+}

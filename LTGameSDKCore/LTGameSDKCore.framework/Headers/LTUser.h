@@ -16,12 +16,16 @@ typedef NS_ENUM(NSInteger, LTUserType) {
     LTUserTypeUnLogin,
     LTUserTypeFacebook,
     LTUserTypeGoogle,
+    LTUserTypeOther,
+    LTUserTypeTourist,
 };
 NS_ASSUME_NONNULL_BEGIN
 
 @interface LTUser : NSObject
 //乐推用户ID
 @property (nonatomic,copy) NSString *LT_UID;
+//第三方平台获取的token
+@property (nonatomic,copy) NSString *thirdPlatformToken;
 //乐推lt_uid_token
 @property (nonatomic,copy) NSString *LTUidToken;
 //用户登录操作返回结果（成功、失败、取消）

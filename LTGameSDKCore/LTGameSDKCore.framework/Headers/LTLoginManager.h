@@ -9,13 +9,14 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "LTUser.h"
+#import "LTPlatformManagerDelegate.h"
+#import "LTPlatformConfig.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
 typedef void (^loginUserBlock)(LTUser *loginUser);
-@interface LTLoginManager : NSObject
+@interface LTLoginManager : NSObject<LTPlatformManagerDelegate,LTPlatformConfig>
 + (instancetype)sharedInstance;
-
 
 /**
  注册乐推应用
@@ -26,44 +27,21 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
  */
 -(void)registLTAppID:(NSString *)appId appkey:(NSString *)key UIViewController:(UIViewController *)vc;
 
+@property (nonatomic, strong) LTUser *currentUser;
 /**
- Facebook登录
+ 检查用户状态，判断是否可以自动登录
  
  @param block 回调通知
  */
-#if __has_include(<FBSDKCoreKit/FBSDKCoreKit.h>)
--(void)facebookLogin:(loginUserBlock)block;
-#endif
-
-#if __has_include(<GoogleSignIn/GoogleSignIn.h>)
+-(void)getUserLoginState:(loginUserBlock)block;
 /**
- google平台注册
+ 设置用户协议和隐私条款连接
  
- @param clientID Google平台生成的客户端ID
- @param vc 当前所在的UIViewController
+ @param userAgreement 用户协议网址
+ @param privacy 隐私政策网址
  */
--(void)registGooglePlatform:(NSString *)clientID withUIViewController:(UIViewController *)vc;
-/**
- Google登录
+-(void)linkOfUserAgreement:(NSString *)userAgreement andPrivacyLine:(NSString *)privacy;
 
- @param block 接受回调的Block
- */
--(void)googleLogin:(loginUserBlock)block;
-#endif
-/**
- 获取登录结果回调
- 
- @param application 当前应用
- @param url 回调的url
- @param options 包含回调应用的BundleIdentifier（比如“com.facebook.app”）
- @return 内部使用
- */
-- (BOOL)application:(UIApplication *)application
-            openURL:(NSURL *)url
-            options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
-
-
-@property (nonatomic, strong) LTUser *currentUser;
 @end
 
 NS_ASSUME_NONNULL_END

@@ -1,0 +1,6 @@
+framework module LTPlatformFacebook {
+  umbrella header "LTPlatformFacebook.h"
+
+  export *
+  module * { export * }
+}
