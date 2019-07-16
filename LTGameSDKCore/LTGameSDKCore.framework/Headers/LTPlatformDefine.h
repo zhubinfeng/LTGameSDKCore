@@ -11,7 +11,7 @@
 
 #define ValueOrEmpty(value) ((value) ? value : @"")
 
-typedef NS_ENUM(NSUInteger, LTPlayformType) {
+typedef NS_ENUM(NSUInteger, LTPlatformType) {
     LTPlatformFacebook = 101,
     LTPlatformGoogle,
 };

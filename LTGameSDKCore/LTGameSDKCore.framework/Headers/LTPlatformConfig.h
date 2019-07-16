@@ -10,20 +10,20 @@
 
 @optional
 
-- (void)setPlatform:(LTPlayformType)platformType
+- (void)setPlatform:(LTPlatformType)platformType
              appKey:(NSString *)appKey
               appID:(NSString *)appID
           appSecret:(NSString *)appSecret
         redirectURL:(NSString *)redirectURL
          URLSchemes:(NSString *)URLSchemes;
 
-- (NSString *)appKeyWithPlatform:(LTPlayformType)platformType;
+- (NSString *)appKeyWithPlatform:(LTPlatformType)platformType;
 
-- (NSString *)appIDWithPlatform:(LTPlayformType)platformType;
+- (NSString *)appIDWithPlatform:(LTPlatformType)platformType;
 
-- (NSString *)appSecretWithPlatform:(LTPlayformType)platformType;
+- (NSString *)appSecretWithPlatform:(LTPlatformType)platformType;
 
-- (NSString *)redirectURLWithPlatform:(LTPlayformType)platformType;
+- (NSString *)redirectURLWithPlatform:(LTPlatformType)platformType;
 
-- (NSString *)URLSchemesWithPlatform:(LTPlayformType)platformType;
+- (NSString *)URLSchemesWithPlatform:(LTPlatformType)platformType;
 @end

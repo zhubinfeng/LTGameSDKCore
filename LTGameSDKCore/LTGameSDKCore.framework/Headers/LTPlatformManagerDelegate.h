@@ -14,7 +14,7 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
 
 @optional
 
-- (void)signInWithType:(LTPlayformType)platformType
+- (void)signInWithType:(LTPlatformType)platformType
     fromViewController:(UIViewController *)viewController
               callback:(loginUserBlock)callback;
 - (void)LTPlatformApplication:(UIApplication *)app openURL:(NSURL *)url ptions:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options;
