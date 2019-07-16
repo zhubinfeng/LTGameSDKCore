@@ -34,13 +34,6 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
  @param block 回调通知
  */
 -(void)getUserLoginState:(loginUserBlock)block;
-/**
- 设置用户协议和隐私条款连接
- 
- @param userAgreement 用户协议网址
- @param privacy 隐私政策网址
- */
--(void)linkOfUserAgreement:(NSString *)userAgreement andPrivacyLine:(NSString *)privacy;
 
 @end
 
