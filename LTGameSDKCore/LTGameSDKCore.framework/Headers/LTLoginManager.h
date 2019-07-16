@@ -25,7 +25,7 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
  @param key 从乐推平台生成的应用key
  @param vc 当前界面所处的ViewController
  */
--(void)registLTAppID:(NSString *)appId appkey:(NSString *)key UIViewController:(UIViewController *)vc;
+-(void)registLTAppID:(NSString *)appId appkey:(NSString *)key;
 
 @property (nonatomic, strong) LTUser *currentUser;
 /**
