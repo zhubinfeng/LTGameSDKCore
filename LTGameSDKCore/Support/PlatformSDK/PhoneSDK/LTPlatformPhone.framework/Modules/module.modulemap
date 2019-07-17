@@ -1,0 +1,6 @@
+framework module LTPlatformPhone {
+  umbrella header "LTPlatformPhone.h"
+
+  export *
+  module * { export * }
+}
