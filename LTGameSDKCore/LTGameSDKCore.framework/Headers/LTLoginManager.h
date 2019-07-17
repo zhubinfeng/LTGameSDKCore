@@ -17,23 +17,26 @@ NS_ASSUME_NONNULL_BEGIN
 typedef void (^loginUserBlock)(LTUser *loginUser);
 @interface LTLoginManager : NSObject<LTPlatformManagerDelegate,LTPlatformConfig>
 + (instancetype)sharedInstance;
-
 /**
  注册乐推应用
 
  @param appId 从乐推平台申请的应用ID
  @param key 从乐推平台生成的应用key
- @param vc 当前界面所处的ViewController
  */
 -(void)registLTAppID:(NSString *)appId appkey:(NSString *)key;
-
-@property (nonatomic, strong) LTUser *currentUser;
 /**
  检查用户状态，判断是否可以自动登录
  
  @param block 回调通知
  */
--(void)getUserLoginState:(loginUserBlock)block;
+- (void)getUserStateWithServerCheck:(loginUserBlock)block;
+
+/**
+ 获取当前用户的额信息
+
+ @return 当前用户
+ */
+- (LTUser *)getUserInfo;
 
 @end
 

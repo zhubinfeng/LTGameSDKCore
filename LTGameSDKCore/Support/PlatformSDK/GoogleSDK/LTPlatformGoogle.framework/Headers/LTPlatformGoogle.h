@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LTGoogleManager.h"
 //! Project version number for LTPlatformGoogle.
 FOUNDATION_EXPORT double LTPlatformGoogleVersionNumber;
 

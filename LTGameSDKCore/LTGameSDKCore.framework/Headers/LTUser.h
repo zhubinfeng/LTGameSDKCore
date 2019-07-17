@@ -16,6 +16,7 @@ typedef NS_ENUM(NSInteger, LTUserType) {
     LTUserTypeUnLogin,
     LTUserTypeFacebook,
     LTUserTypeGoogle,
+    LTUserTypePhone,
     LTUserTypeOther,
     LTUserTypeTourist,
 };

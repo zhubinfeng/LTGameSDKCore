@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LTFacebookManager.h"
 //! Project version number for LTPlatformFacebook.
 FOUNDATION_EXPORT double LTPlatformFacebookVersionNumber;
 

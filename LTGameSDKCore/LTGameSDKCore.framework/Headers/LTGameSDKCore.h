@@ -7,7 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "LTPlatformManagerDelegate.h"
+#import "LTUserDefaultTool.h"
+#import "LTPlatformDefine.h"
+#import "LTPlatformConfig.h"
+#import "GoodsModel.h"
+#import "LTPlayErrorCode.h"
+#import "LTPlayManager.h"
+#import "LTUser.h"
+#import "LTLoginManager.h"
 //! Project version number for LTGameSDKCore.
 FOUNDATION_EXPORT double LTGameSDKCoreVersionNumber;
 
