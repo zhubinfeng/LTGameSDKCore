@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LTGameSDKCore"
-  s.version      = "0.2.0"
+  s.version      = "0.2.1"
   s.summary      = "LTGameSDKCore Supports base function to third login."
   s.description  = "You can use this SDK easy in third login, and this sdk will add more for later"
   s.homepage     = "https://github.com/zhubinfeng/LTGameSDKCore"
@@ -45,6 +45,7 @@ Pod::Spec.new do |s|
         # Weixin
         sp.subspec 'Weixin' do |ssp|
           ssp.vendored_frameworks = 'LTGameSDKCore/Support/PlatformSDK/WeixinSDK/LTPlatformWeixin.framework'
+          ssp.libraries = "z", "sqlite3.0", "c++"
         end
 
       end
