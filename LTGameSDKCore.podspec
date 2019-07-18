@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LTGameSDKCore"
-  s.version      = "0.1.8"
+  s.version      = "0.1.9"
   s.summary      = "LTGameSDKCore Supports base function to third login."
   s.description  = "You can use this SDK easy in third login, and this sdk will add more for later"
   s.homepage     = "https://github.com/zhubinfeng/LTGameSDKCore"
@@ -35,6 +35,16 @@ Pod::Spec.new do |s|
         # Phone
         sp.subspec 'Phone' do |ssp|
           ssp.vendored_frameworks = 'LTGameSDKCore/Support/PlatformSDK/PhoneSDK/LTPlatformPhone.framework'
+        end
+        # QQ
+        sp.subspec 'QQ' do |ssp|
+          ssp.vendored_frameworks = 'LTGameSDKCore/Support/PlatformSDK/PhoneSDK/LTPlatformQQ.framework'
+          ssp.frameworks = "Foundation", "UIKit","Security","SystemConfiguration","CoreGraphics","CoreTelephony"
+          ssp.libraries = "iconv", "sqlite3", "z","stdc++"
+        end
+        # Weixin
+        sp.subspec 'Weixin' do |ssp|
+          ssp.vendored_frameworks = 'LTGameSDKCore/Support/PlatformSDK/PhoneSDK/LTPlatformWeixin.framework'
         end
 
       end

@@ -14,6 +14,8 @@
 typedef NS_ENUM(NSUInteger, LTPlatformType) {
     LTPlatformFacebook = 101,
     LTPlatformGoogle,
+    LTPlatformQQ,
+    LTPlatformWeixin,
 };
 
 #endif /* LTPlatformDefine_h */

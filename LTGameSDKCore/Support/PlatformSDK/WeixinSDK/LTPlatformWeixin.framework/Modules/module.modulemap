@@ -1,0 +1,6 @@
+framework module LTPlatformWeixin {
+  umbrella header "LTPlatformWeixin.h"
+
+  export *
+  module * { export * }
+}

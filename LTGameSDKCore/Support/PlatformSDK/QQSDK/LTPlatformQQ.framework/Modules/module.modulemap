@@ -1,0 +1,6 @@
+framework module LTPlatformQQ {
+  umbrella header "LTPlatformQQ.h"
+
+  export *
+  module * { export * }
+}
