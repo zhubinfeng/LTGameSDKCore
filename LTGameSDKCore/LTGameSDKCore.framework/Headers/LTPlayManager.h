@@ -28,13 +28,12 @@ typedef void(^playNowStatusBlocks)(int code, NSString *nowInfoMessage);
 
 @interface LTPlayManager : NSObject
 
--(instancetype)initPlayWithViewModel:(GoodsModel *)goodsModel SuccessBlocks:(playSuccessBlocks)successBlocks failureBlocks:(playFailureBlocks)failureBlocks;
++ (instancetype)sharedInstance;
+
+-(void)playWithViewModel:(GoodsModel *)goodsModel SuccessBlocks:(playSuccessBlocks)successBlocks failureBlocks:(playFailureBlocks)failureBlocks  nowStatusBlocks:(playNowStatusBlocks)nowStatusBlocks;
 
 /// Product information 订单信息
 @property (strong, nonatomic, nonnull) GoodsModel *goodsModel;
-
-/// 当前支付状态 Blocks
-@property (copy, nonatomic) playNowStatusBlocks nowStatusBlocks;
 
 @end
 
