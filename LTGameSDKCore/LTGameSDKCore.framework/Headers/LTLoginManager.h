@@ -23,7 +23,7 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
  @param appId 从乐推平台申请的应用ID
  @param key 从乐推平台生成的应用key
  */
--(void)registLTAppID:(NSString *)appId appkey:(NSString *)key;
+-(void)registLTAppID:(NSString *)appId appkey:(NSString *)key serverURL:(NSString *)serverURL;
 /**
  检查用户状态，判断是否可以自动登录
  

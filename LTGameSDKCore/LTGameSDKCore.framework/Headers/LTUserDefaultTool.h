@@ -41,6 +41,9 @@ NS_ASSUME_NONNULL_BEGIN
 //游客本地生成的ID
 - (NSString *)getLocalTouristID;
 - (void)saveLocalTouristID:(NSString *)LocalTouristID;
+- (NSString *)getLTServerBaseURL;
+
+- (void)saveLTServerBaseURL:(NSString *)LTAppKey;
 //清空用户数据
 - (void)removeUserInfo;
 @end

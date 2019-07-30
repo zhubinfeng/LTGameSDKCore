@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LTGameSDKCore"
-  s.version      = "0.2.3"
+  s.version      = "0.2.4"
   s.summary      = "LTGameSDKCore Supports base function to third login."
   s.description  = "You can use this SDK easy in third login, and this sdk will add more for later"
   s.homepage     = "https://github.com/zhubinfeng/LTGameSDKCore"
