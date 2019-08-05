@@ -26,7 +26,7 @@ NS_ASSUME_NONNULL_BEGIN
 /// 商品ID 形如（com.test.1gold）
 @property (nonatomic, copy, nonnull) NSString *productId;
 ///
-@property (nonatomic, copy, nonnull) id custom;
+@property (nonatomic, strong, nonnull) NSDictionary *custom;
 //支付类型（测试或者正式）
 @property (nonatomic,assign) NSInteger payType;
 

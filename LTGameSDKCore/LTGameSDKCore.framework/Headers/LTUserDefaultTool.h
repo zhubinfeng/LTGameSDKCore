@@ -42,6 +42,9 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)getLocalTouristID;
 - (void)saveLocalTouristID:(NSString *)LocalTouristID;
 - (NSString *)getLTServerBaseURL;
+- (NSArray *)getCacheOrders;
+
+- (void)saveCacheOrders:(NSArray *)orders;
 
 - (void)saveLTServerBaseURL:(NSString *)LTAppKey;
 //清空用户数据
