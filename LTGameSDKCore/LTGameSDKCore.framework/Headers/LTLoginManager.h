@@ -23,7 +23,7 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
  @param appId 从乐推平台申请的应用ID
  @param key 从乐推平台生成的应用key
  */
--(void)registLTAppID:(NSString *)appId appkey:(NSString *)key serverURL:(NSString *)serverURL;
+-(void)registLTAppID:(NSString *)appId appkey:(NSString *)key isDevelopmentModel:(BOOL)isDevelopmentModel;
 /**
  检查用户状态，判断是否可以自动登录
  
@@ -37,6 +37,13 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
  @return 当前用户
  */
 - (LTUser *)getUserInfo;
+/// 游客账户绑定
+/// @param platformType 账号类型
+/// @param viewController 当前的ViewController
+/// @param callback 回调
+- (void)bindTouristWithType:(LTPlatformType)platformType
+         fromViewController:(UIViewController *)viewController
+                   callback:(loginUserBlock)callback;
 
 @end
 

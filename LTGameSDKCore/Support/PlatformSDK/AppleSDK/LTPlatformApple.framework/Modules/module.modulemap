@@ -1,0 +1,6 @@
+framework module LTPlatformApple {
+  umbrella header "LTPlatformApple.h"
+
+  export *
+  module * { export * }
+}

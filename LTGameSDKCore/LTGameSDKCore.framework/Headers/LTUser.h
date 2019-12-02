@@ -14,6 +14,7 @@ typedef NS_ENUM(NSInteger, LTLoginState) {
 };
 typedef NS_ENUM(NSInteger, LTUserType) {
     LTUserTypeUnLogin,
+    LTUserTypeApple,
     LTUserTypeFacebook,
     LTUserTypeGoogle,
     LTUserTypePhone,
@@ -41,6 +42,10 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) NSString *message;
 //验证码（手机号注册时会用到）
 @property (nonatomic,copy) NSString *authCode;
+//游客的唯一标志
+@property (nonatomic,copy) NSString *touristUUID;
+//Apple登录的UID
+@property (nonatomic,copy) NSString *appleUID;
 @end
 
 NS_ASSUME_NONNULL_END

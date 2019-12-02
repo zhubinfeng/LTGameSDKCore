@@ -16,6 +16,7 @@
 #import "LTPlayManager.h"
 #import "LTUser.h"
 #import "LTLoginManager.h"
+#import "LTSAMKeychain.h"
 //! Project version number for LTGameSDKCore.
 FOUNDATION_EXPORT double LTGameSDKCoreVersionNumber;
 

@@ -3,7 +3,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "LTGameSDKCore"
-  s.version      = "0.3.1"
+  s.version      = "0.3.2"
   s.summary      = "LTGameSDKCore Supports base function to third login."
   s.description  = "You can use this SDK easy in third login, and this sdk will add more for later"
   s.homepage     = "https://github.com/zhubinfeng/LTGameSDKCore"
@@ -46,6 +46,14 @@ Pod::Spec.new do |s|
         sp.subspec 'Weixin' do |ssp|
           ssp.vendored_frameworks = 'LTGameSDKCore/Support/PlatformSDK/WeixinSDK/LTPlatformWeixin.framework'
           ssp.libraries = "z", "sqlite3.0", "c++"
+        end
+        # apple
+        sp.subspec 'AppleSign' do |ssp|
+          ssp.vendored_frameworks = 'LTGameSDKCore/Support/PlatformSDK/AppleSDK/LTPlatformApple.framework'
+        end
+        # apple
+        sp.subspec 'Guest' do |ssp|
+          ssp.vendored_frameworks = 'LTGameSDKCore/Support/PlatformSDK/GuestSDK/LTPlatformGuest.framework'
         end
 
       end

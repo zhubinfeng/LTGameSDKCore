@@ -39,10 +39,13 @@ NS_ASSUME_NONNULL_BEGIN
 - (NSString *)getPrivacyLink;
 - (void)savePrivacyLink:(NSString *)privacyLink;
 //游客本地生成的ID
-- (NSString *)getLocalTouristID;
-- (void)saveLocalTouristID:(NSString *)LocalTouristID;
+- (NSString *)getTouristFirstConfirm;
+- (void)saveTouristFirstConfirm:(NSString *)LocalTouristID;
 - (NSString *)getLTServerBaseURL;
 - (NSArray *)getCacheOrders;
+
+- (NSString *)getLTAppleUID;
+- (void)saveLTAppleUID:(NSString *)LTAppleUID;
 
 - (void)saveCacheOrders:(NSArray *)orders;
 

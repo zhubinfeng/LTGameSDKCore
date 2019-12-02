@@ -1,0 +1,6 @@
+framework module LTPlatformGuest {
+  umbrella header "LTPlatformGuest.h"
+
+  export *
+  module * { export * }
+}
