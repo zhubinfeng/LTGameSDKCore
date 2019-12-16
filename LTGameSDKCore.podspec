@@ -23,7 +23,8 @@ Pod::Spec.new do |s|
 
         # Facebook
         sp.subspec 'Facebook' do |ssp|
-          ssp.vendored_frameworks = 'LTGameSDKCore/Support/PlatformSDK/FacebookSDK/FBSDKCoreKit.framework','LTGameSDKCore/Support/PlatformSDK/FacebookSDK/FBSDKLoginKit.framework','LTGameSDKCore/Support/PlatformSDK/FacebookSDK/Bolts.framework','LTGameSDKCore/Support/PlatformSDK/FacebookSDK/LTPlatformFacebook.framework'
+          ssp.vendored_frameworks = 'LTGameSDKCore/Support/PlatformSDK/FacebookSDK/FBSDKCoreKit.framework','LTGameSDKCore/Support/PlatformSDK/FacebookSDK/FBSDKLoginKit.framework','LTGameSDKCore/Support/PlatformSDK/FacebookSDK/LTPlatformFacebook.framework'
+          ssp.frameworks = 'Accelerate'
         end
 
         # Google
