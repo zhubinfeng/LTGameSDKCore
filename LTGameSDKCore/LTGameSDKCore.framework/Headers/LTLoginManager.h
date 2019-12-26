@@ -45,6 +45,8 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
          fromViewController:(UIViewController *)viewController
                    callback:(loginUserBlock)callback;
 
+/// 游客解绑
+/// @param callback 解绑回调信息
 - (void)unbindTouristWithCallback:(loginUserBlock)callback;
 @end
 
