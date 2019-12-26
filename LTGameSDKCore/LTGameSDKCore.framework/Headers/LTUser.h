@@ -12,6 +12,14 @@ typedef NS_ENUM(NSInteger, LTLoginState) {
     LTLoginFailed,
     LTLoginCancel,
 };
+typedef NS_ENUM(NSInteger, LTBindState) {
+    LTBindSuccess,
+    LTBindFailed,
+    LTBindCancel,
+    LTUnbindSuccess,
+    LTUnbindFailed,
+    LTUnbindCancel,
+};
 typedef NS_ENUM(NSInteger, LTUserType) {
     LTUserTypeUnLogin,
     LTUserTypeApple,

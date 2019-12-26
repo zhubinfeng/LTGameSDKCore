@@ -45,6 +45,7 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
          fromViewController:(UIViewController *)viewController
                    callback:(loginUserBlock)callback;
 
+- (void)unbindTouristWithCallback:(loginUserBlock)callback;
 @end
 
 NS_ASSUME_NONNULL_END
