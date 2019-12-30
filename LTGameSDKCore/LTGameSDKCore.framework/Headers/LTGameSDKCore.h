@@ -15,6 +15,7 @@
 #import "LTPlayErrorCode.h"
 #import "LTPlayManager.h"
 #import "LTUser.h"
+#import "LTGameUserModel.h"
 #import "LTLoginManager.h"
 #import "LTSAMKeychain.h"
 //! Project version number for LTGameSDKCore.
