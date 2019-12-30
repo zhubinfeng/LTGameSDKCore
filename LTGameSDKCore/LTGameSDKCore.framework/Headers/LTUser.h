@@ -54,6 +54,8 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic,copy) NSString *touristUUID;
 //Apple登录的UID
 @property (nonatomic,copy) NSString *appleUID;
+//服务器错误码
+@property (nonatomic,assign) NSInteger serverBindCode;
 @end
 
 NS_ASSUME_NONNULL_END

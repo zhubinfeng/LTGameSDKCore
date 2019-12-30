@@ -11,6 +11,7 @@
 #import "LTUser.h"
 #import "LTPlatformManagerDelegate.h"
 #import "LTPlatformConfig.h"
+#import "LTGameUserModel.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -48,6 +49,11 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
 /// 游客解绑
 /// @param callback 解绑回调信息
 - (void)unbindTouristWithCallback:(loginUserBlock)callback;
+//Facebook应用激活统计
+- (void)activateAppEvents;
+/// 关联游戏内用户信息和SDK用户信息
+/// @param gameUser 游戏用户模型
+- (void)bindGameUserAndLTUser:(LTGameUserModel *)gameUser;
 @end
 
 NS_ASSUME_NONNULL_END
