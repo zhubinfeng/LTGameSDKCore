@@ -45,10 +45,6 @@ typedef void (^loginUserBlock)(LTUser *loginUser);
 - (void)bindTouristWithType:(LTPlatformType)platformType
          fromViewController:(UIViewController *)viewController
                    callback:(loginUserBlock)callback;
-
-/// 游客解绑
-/// @param callback 解绑回调信息
-- (void)unbindTouristWithCallback:(loginUserBlock)callback;
 //Facebook应用激活统计
 - (void)activateAppEvents;
 /// 关联游戏内用户信息和SDK用户信息
